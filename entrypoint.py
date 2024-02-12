@@ -13,7 +13,7 @@ def main():
     team = os.getenv("TEAM_NAME")
     managers = json.loads(os.getenv("MANAGERS"))
     milestone_name = os.getenv("MILESTONE_NAME")
-    milestone_grade = os.getenv("MILESTONE_GRADE")
+    milestone_grade = float(os.getenv("MILESTONE_GRADE", 100.0))
     milestone_starts_on = os.getenv("MILESTONE_STARTS_ON")
     milestone_ends_on = os.getenv("MILESTONE_ENDS_ON")
 
